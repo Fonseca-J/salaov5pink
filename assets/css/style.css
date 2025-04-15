@@ -1,12 +1,12 @@
 /* ================ VARIÁVEIS ================ */
 :root {
-    --purple: #D23D73;           /* Rosa escuro principal */
+    --purple: #D23D73;           /* ROSA principal (substitui o roxo) */
     --light-purple: #FF8FAB;     /* Rosa claro */
-    --dark-purple: #9E2B56;      /* Rosa vinho */
+    --dark-purple: #9E2B56;      /* Rosa escuro */
     --white: #ffffff;
     --light-gray: #f8f9fa;
     --dark-gray: #343a40;
-    --text-color: #333333;
+    --text-color: #333333;        /* Mantenho todas as outras variáveis ORIGINAIS: */
 }
 
 /* ================ ESTILOS GERAIS ================ */
@@ -72,7 +72,7 @@ h6 {
 }
 
 .bg-purple {
-    background-color: var(--purple) !important;
+    background-color: var(--light-gray) !important;
 }
 
 /* ================ HERO SECTION ================ */
@@ -451,6 +451,10 @@ footer hr {
 
     .hero-section h1 {
         font-size: 2.5rem;
+    }
+
+    .navbar, .bg-purple {
+        background-color: var(--dark-purple) !important; /* Rosa vinho */
     }
 
     .navbar-nav {
